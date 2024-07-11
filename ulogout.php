@@ -1,0 +1,10 @@
+<?php
+   session_start();
+   if(isset($_SESSION['userid'])){
+       session_destroy();
+       header('Location:http://localhost/gymproject/ulogin.php');
+   }
+   else{
+       header('Location:http://localhost/gymproject/index.html');
+   }
+?>
